@@ -8,6 +8,8 @@
 body {
     @extend %base-font-size;
     @extend %base-font-weight;
+    color: white;
+
 }
 
 // All paragraphs with the 'p' tag

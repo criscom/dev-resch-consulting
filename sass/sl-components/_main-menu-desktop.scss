@@ -1,0 +1,117 @@
+/* CSS code for the main menu on desktop
+** added by criscom
+** NICE MENUS STYLING
+** on all pages
+** min-width: 768px
+** 
+*/
+
+// Hide responsive menu
+@include breakpoint($desktop)
+{
+    .responsive-menus
+    {
+        // display: none;
+    }
+    ul.nice-menu
+    {
+        @include unordered;
+        padding-left: 32px;
+        color: $red;
+        li
+        {
+            display: list-item;
+            float: none;
+        }
+    }
+}
+
+// Style nice menus
+
+
+
+
+.block-nice-menus > ul.nice-menu > li
+{
+    border: 0;
+    background-color: transparent;
+
+    @include breakpoint($desktop)
+    {
+        padding-right: 12px;
+        padding-right: .7rem;
+    }
+    @include breakpoint($large)
+    {
+        padding-right: 32px;
+        padding-right: 2rem;
+    }
+    &.last
+    {
+        padding-right: 0;
+    }
+    > a
+    {
+        padding-right: 0 !important;
+
+        text-decoration: none;
+        // text-transform: uppercase;
+
+        @extend %base-font-size;
+        @include link-colors($normal: $black, $hover: $header-color !important);
+        @extend %medium-font-weight;
+    }
+}
+
+// Sets the main menu item active when a submenu is active
+.block-nice-menus > ul.nice-menu
+{
+    > li.active-trail > a
+    {
+        color: $header-color !important;
+    }
+}
+
+
+ul.nice-menu-down
+{
+    li.menuparent,
+    li.menuparent:hover
+    {
+        background-color: transparent;
+        background-image: none;
+    }
+}
+
+// secondary menus 
+
+ul.nice-menu li.menuparent ul
+{
+    padding: 8px;
+    padding: .5rem;
+    // top: 2.2em;
+
+    border: 0;
+    border: 1px solid rgb(209,209,209);
+    background-color: rgb(229,229,229);
+
+    @include border-radius(11px);
+    li
+    {
+        border: 0;
+        background-color: rgb(229,229,229);
+        a
+        {
+            text-decoration: none;
+
+            @include link-colors($normal: black, $hover: $header-color !important);
+        }
+    }
+    li.active-trail
+    {
+        a
+        {
+            color: $header-color;
+        }
+    }
+}

@@ -6,23 +6,65 @@
 */
 
 
-header.header {
-    background-color: $header-color;
-    @include border-radius(4px);
+header.header
+{
     padding: 8px 0;
 
+    background-color: white;
+
+    @include border-top-left-radius(100px);
 }
 
-.header__site-link {
-    &:hover {
+.header__name-and-slogan
+{
+    padding-top: 24px;
+    padding-top: 1.5rem;
+}
+
+.header__site-link
+{
+    &:hover
+    {
         text-decoration: none;
+
         color: $brand-primary;
     }
-    span {
-    font-family: $opensans;
-    font-size: 1.5 * $h1-font-size;
-    padding-left: 16px;
-    padding-left: 1rem;
+    span
+    {
+        // font-family: $opensans;
+        font-size: 1.5 * $h1-font-size;
 
+        padding-left: 48px;
+        padding-left: 3rem;
+
+        color: $red;
+    }
+}
+
+.header__logo {
+    padding-top: 24px;
+    padding-top: 1.5rem;
+    padding-left: 48px;
+    padding-left: 3rem;
+}
+
+.header__name-and-slogan
+{
+    @include breakpoint($desktop)
+    {
+        float: left;
+
+        max-width: 400px;
+        margin-right: 16px;
+        margin-right: 1rem;
+    }
+}
+
+.header__region
+{
+    @include breakpoint($desktop)
+    {
+        float: left;
+        clear: none;
     }
 }

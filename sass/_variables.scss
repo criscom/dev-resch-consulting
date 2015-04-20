@@ -121,6 +121,10 @@ $white-space-rem: 1.5rem;
 $yellow: rgb(255,255,0);
 $red: rgb(255,0,0);
 $black: #231f20;
+$header-color: $red;
+$header-bg: rgb(203,204,206); // #cbccce;
+$body-bg: rgb(71,74,78); // #474a4e
+$page-bg: rgb(89,92,97); // #595c61;
 
 //
 // Breakpoints
@@ -141,6 +145,7 @@ $max568: max-width 568px;
 
 // Ranges
 $range980-1199: 980px 1199px;
+$range769-1044: 769px 1044px;
 $range769-979: 769px 979px;
 $range569-768: 569px 768px;
 $range481-568: 481px 568px;

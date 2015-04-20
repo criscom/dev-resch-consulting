@@ -3,6 +3,14 @@
 ** added by criscom
 */
 
+body {
+    background-color: $body-bg !important;
+}
+
+.main {
+    background-color: $page-bg;
+}
+
 .main h1
 {
     text-transform: uppercase;
@@ -15,18 +23,18 @@
 .group-left.field-group-div
 {
     width: 68%;
-
+    float: left;
     @include clearfix;
     @include breakpoint($iphone5-6)
     {
         width: 100%;
     }
 }
-.group-left.field-group-div
+.group-right.field-group-div
 {
     width: 30%;
     margin-left: 2%;
-
+    float: right;
     @include breakpoint($iphone5-6)
     {
         width: 100%;
