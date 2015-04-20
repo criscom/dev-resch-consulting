@@ -3,11 +3,22 @@
 ** added by criscom
 */
 
-body {
+body
+{
     background-color: $body-bg !important;
 }
 
-.main {
+.page
+{
+    @include breakpoint($desktop)
+    {
+        padding-top: 24px;
+        padding-top: 1.5rem;
+    }
+}
+
+.main
+{
     background-color: $page-bg;
 }
 
@@ -22,8 +33,10 @@ body {
 
 .group-left.field-group-div
 {
-    width: 68%;
     float: left;
+
+    width: 68%;
+
     @include clearfix;
     @include breakpoint($iphone5-6)
     {
@@ -32,9 +45,11 @@ body {
 }
 .group-right.field-group-div
 {
+    float: right;
+
     width: 30%;
     margin-left: 2%;
-    float: right;
+
     @include breakpoint($iphone5-6)
     {
         width: 100%;

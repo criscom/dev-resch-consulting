@@ -3289,21 +3289,29 @@ body {
   background-color: #474a4e !important;
 }
 
-/* line 10, ../sass/sl-components/_default.scss */
+@media (min-width: 769px) {
+  /* line 11, ../sass/sl-components/_default.scss */
+  .page {
+    padding-top: 24px;
+    padding-top: 1.5rem;
+  }
+}
+
+/* line 20, ../sass/sl-components/_default.scss */
 .main {
   background-color: #595c61;
 }
 
-/* line 14, ../sass/sl-components/_default.scss */
+/* line 25, ../sass/sl-components/_default.scss */
 .main h1 {
   text-transform: uppercase;
 }
 
 /* two column layout */
-/* line 23, ../sass/sl-components/_default.scss */
+/* line 34, ../sass/sl-components/_default.scss */
 .group-left.field-group-div {
-  width: 68%;
   float: left;
+  width: 68%;
 }
 /* line 6, ../sass/library/_clearfix.scss */
 .group-left.field-group-div:before {
@@ -3317,20 +3325,20 @@ body {
   clear: both;
 }
 @media (max-width: 767px) {
-  /* line 23, ../sass/sl-components/_default.scss */
+  /* line 34, ../sass/sl-components/_default.scss */
   .group-left.field-group-div {
     width: 100%;
   }
 }
 
-/* line 33, ../sass/sl-components/_default.scss */
+/* line 46, ../sass/sl-components/_default.scss */
 .group-right.field-group-div {
+  float: right;
   width: 30%;
   margin-left: 2%;
-  float: right;
 }
 @media (max-width: 767px) {
-  /* line 33, ../sass/sl-components/_default.scss */
+  /* line 46, ../sass/sl-components/_default.scss */
   .group-right.field-group-div {
     width: 100%;
   }
