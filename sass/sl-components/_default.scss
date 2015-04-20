@@ -3,6 +3,32 @@
 ** added by criscom
 */
 
-.main h1{
+.main h1
+{
     text-transform: uppercase;
+}
+
+/* two column layout */
+// content left
+// citations right
+
+.group-left.field-group-div
+{
+    width: 68%;
+
+    @include clearfix;
+    @include breakpoint($iphone5-6)
+    {
+        width: 100%;
+    }
+}
+.group-left.field-group-div
+{
+    width: 30%;
+    margin-left: 2%;
+
+    @include breakpoint($iphone5-6)
+    {
+        width: 100%;
+    }
 }
