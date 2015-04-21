@@ -3670,19 +3670,28 @@ header.header {
   -webkit-border-top-left-radius: 100px;
   border-top-left-radius: 100px;
 }
+@media (min-width: 569px) {
+  /* line 9, ../sass/sl-components/_header.scss */
+  header.header {
+    background-image: url('../images/resch_headerfoto.jpg?1429615059');
+    background-size: 240px 150px;
+    background-position: right 18px;
+    background-repeat: no-repeat;
+  }
+}
 
-/* line 18, ../sass/sl-components/_header.scss */
+/* line 24, ../sass/sl-components/_header.scss */
 .header__name-and-slogan {
   padding-top: 24px;
   padding-top: 1.5rem;
 }
 
-/* line 26, ../sass/sl-components/_header.scss */
+/* line 32, ../sass/sl-components/_header.scss */
 .header__site-link:hover {
   text-decoration: none;
   color: #428bca;
 }
-/* line 32, ../sass/sl-components/_header.scss */
+/* line 38, ../sass/sl-components/_header.scss */
 .header__site-link span {
   font-size: 48px;
   padding-left: 48px;
@@ -3690,7 +3699,7 @@ header.header {
   color: #e2001a;
 }
 
-/* line 44, ../sass/sl-components/_header.scss */
+/* line 50, ../sass/sl-components/_header.scss */
 .header__logo {
   padding-top: 24px;
   padding-top: 1.5rem;
@@ -3703,7 +3712,7 @@ header.header {
 }
 
 @media (min-width: 769px) {
-  /* line 56, ../sass/sl-components/_header.scss */
+  /* line 62, ../sass/sl-components/_header.scss */
   .header__name-and-slogan {
     float: left;
     max-width: 400px;
@@ -3713,7 +3722,7 @@ header.header {
 }
 
 @media (min-width: 769px) {
-  /* line 67, ../sass/sl-components/_header.scss */
+  /* line 73, ../sass/sl-components/_header.scss */
   .header__region {
     float: left;
     clear: none;
