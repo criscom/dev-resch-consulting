@@ -52,6 +52,15 @@ stylesheets[all][] = system.theme.css
 stylesheets[all][] = comment.css
 stylesheets[all][] = node.css
 
+; Opensans Google Webfont
+
+fonts[google_fonts_api][] = "Open Sans&subset=latin-ext#300"
+fonts[google_fonts_api][] = "Open Sans&subset=latin-ext#300italic"
+fonts[google_fonts_api][] = "Open Sans&subset=latin-ext#600"
+fonts[google_fonts_api][] = "Open Sans&subset=latin-ext#600italic"
+fonts[google_fonts_api][] = "Open Sans&subset=latin-ext#700"
+fonts[google_fonts_api][] = "Open Sans&subset=latin-ext#700italic"
+
 ; Add FlexSlider stylesheet.
 
 ;styles[all][] = ../../libraries/flexslider/flexslider.css

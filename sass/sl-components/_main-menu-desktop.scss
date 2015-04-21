@@ -17,7 +17,10 @@
     {
         @include unordered;
         padding-left: 32px;
+        padding-left: 2rem;
         color: $red;
+        margin-top: -4px;
+        margin-top: -0.25rem;
         li
         {
             display: list-item;
@@ -53,10 +56,9 @@
     > a
     {
         padding-right: 0 !important;
-
+        padding: 0 5px 0.2em 5px;
         text-decoration: none;
         // text-transform: uppercase;
-
         @extend %base-font-size;
         @include link-colors($normal: $black, $hover: $header-color !important);
         @extend %medium-font-weight;

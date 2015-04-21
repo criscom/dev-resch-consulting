@@ -46,17 +46,21 @@ header.header
     padding-top: 1.5rem;
     padding-left: 48px;
     padding-left: 3rem;
+    padding-right: 16px;
+    padding-right: 2rem;
+    max-width: 432px;
+    max-width: 27rem;
 }
 
+// not in use
 .header__name-and-slogan
 {
     @include breakpoint($desktop)
     {
         float: left;
-
         max-width: 400px;
-        margin-right: 16px;
-        margin-right: 1rem;
+        margin-right: 24px;
+        margin-right: 1.5rem;
     }
 }
 
