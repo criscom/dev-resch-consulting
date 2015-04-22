@@ -23,11 +23,11 @@
             a {
                 text-decoration: none;
                 @include link-colors($normal: black, $hover: $red);
-                &:hover {
+                &:hover,
+                &.active-trail {
                     // text-decoration: underline;
                     color: $red !important;
-                }
-
+                } 
             }
         }
     }

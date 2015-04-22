@@ -11,10 +11,10 @@ header.header
     padding: 8px 0;
 
     background-color: white;
-    @include breakpoint($tablet){   
+    @include breakpoint($desktop){   
     background-image: image-url('resch_headerfoto.jpg');
-    background-size: 240px 150px;
-    background-position: right 18px;
+    background-size: 287px 187px;
+    background-position: right top;
     background-repeat: no-repeat;
 }
 
