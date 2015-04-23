@@ -3322,14 +3322,20 @@ body {
   margin-bottom: 0;
 }
 
-/* line 39, ../sass/sl-components/_default.scss */
+/* line 42, ../sass/sl-components/_default.scss */
+.page-node-42 .field-name-field-untertitel h3 {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+
+/* line 49, ../sass/sl-components/_default.scss */
 h3.label-above {
   text-transform: uppercase;
   margin-bottom: 0;
 }
 
 /* two column layout */
-/* line 48, ../sass/sl-components/_default.scss */
+/* line 58, ../sass/sl-components/_default.scss */
 .group-left.field-group-div {
   float: left;
   width: 68%;
@@ -3346,39 +3352,39 @@ h3.label-above {
   clear: both;
 }
 @media (max-width: 767px) {
-  /* line 48, ../sass/sl-components/_default.scss */
+  /* line 58, ../sass/sl-components/_default.scss */
   .group-left.field-group-div {
     width: 100%;
   }
 }
 
-/* line 60, ../sass/sl-components/_default.scss */
+/* line 70, ../sass/sl-components/_default.scss */
 .group-right.field-group-div {
   float: right;
   width: 30%;
   margin-left: 2%;
 }
 @media (max-width: 767px) {
-  /* line 60, ../sass/sl-components/_default.scss */
+  /* line 70, ../sass/sl-components/_default.scss */
   .group-right.field-group-div {
     width: 100%;
   }
 }
-/* line 71, ../sass/sl-components/_default.scss */
+/* line 81, ../sass/sl-components/_default.scss */
 .group-right.field-group-div img {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
 
-/* line 78, ../sass/sl-components/_default.scss */
+/* line 88, ../sass/sl-components/_default.scss */
 .compact-form label,
 input {
   color: black;
   font-weight: 300;
 }
 
-/* line 87, ../sass/sl-components/_default.scss */
+/* line 97, ../sass/sl-components/_default.scss */
 .webform-submit {
   color: #fff;
   background-color: #e2001a;

@@ -36,6 +36,16 @@ h1, h2 {
     }
 }
 
+// On the Team page we need spacing below h3 for the first team member
+.page-node-42 {
+    .field-name-field-untertitel {
+        h3 {
+            margin-bottom: 24px;
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
 h3.label-above {
     text-transform: uppercase;
     margin-bottom: 0;
