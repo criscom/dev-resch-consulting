@@ -780,10 +780,10 @@ h1 {
 
 /* line 232, ../sass/base/_normalize.scss */
 h2 {
-  font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 48px;
-  line-height: 3rem;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 24px;
+  line-height: 1.5rem;
   margin-top: 24px;
   margin-top: 1.5rem;
   margin-bottom: 24px;
@@ -3197,11 +3197,11 @@ html[xmlns] .slides {
 /* line 6, ../sass/library/_placeholders.scss */
 body, [role='main'] p,
 [role='main'] ul li, div.download-file a, ul.language-switcher-locale-url li a, .block-nice-menus > ul.nice-menu > li > a {
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 16px;
+  font-size: 1rem;
 }
 
-/* line 12, ../sass/library/_placeholders.scss */
+/* line 14, ../sass/library/_placeholders.scss */
 body, [role='main'] p,
 [role='main'] ul li, .inline-link, div.download-file a, div p a,
 .wohnungsdetails-link a,
@@ -3211,12 +3211,12 @@ li a,
   font-weight: 300;
 }
 
-/* line 16, ../sass/library/_placeholders.scss */
+/* line 18, ../sass/library/_placeholders.scss */
 .front .flexslider .miete-label, .front .flexslider-events .miete-label, .front .flexslider .miete, .front .flexslider-events .miete, ul.language-switcher-locale-url li a, .block-nice-menus > ul.nice-menu > li > a {
   font-weight: 500;
 }
 
-/* line 24, ../sass/library/_placeholders.scss */
+/* line 26, ../sass/library/_placeholders.scss */
 .panel-2col-stacked .panel-col-top,
 .panel-2col-stacked .center-wrapper .panel-col-first,
 .panel-2col-stacked .center-wrapper .panel-col-last, .center-wrapper.one .panel-panel, .center-wrapper.two .panel-col-first, .center-wrapper.two .panel-col-last {
@@ -3226,20 +3226,20 @@ li a,
   border-radius: 4px;
 }
 
-/* line 39, ../sass/library/_placeholders.scss */
+/* line 41, ../sass/library/_placeholders.scss */
 .seminar, .center-wrapper.two .node {
   padding-bottom: 16px;
   padding-bottom: 1rem;
   border-bottom: 1px solid #777777;
 }
 
-/* line 45, ../sass/library/_placeholders.scss */
+/* line 47, ../sass/library/_placeholders.scss */
 .seminar, .center-wrapper.two .node {
   margin-bottom: 32px;
   margin-bottom: 2rem;
 }
 
-/* line 51, ../sass/library/_placeholders.scss */
+/* line 53, ../sass/library/_placeholders.scss */
 .front .center-wrapper.one .panel-panel, .panel-2col-stacked .panel-col-top, .center-wrapper.one .panel-panel {
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
@@ -3304,7 +3304,12 @@ body {
   background-color: #595c61;
 }
 
-/* line 26, ../sass/sl-components/_default.scss */
+/* line 25, ../sass/sl-components/_default.scss */
+.main-content {
+  margin-top: 28px;
+  margin-top: 1.75rem;
+}
+/* line 28, ../sass/sl-components/_default.scss */
 .main-content h1, .main-content h2 {
   text-transform: uppercase;
   word-wrap: break-word;
@@ -3316,30 +3321,30 @@ body {
   font-weight: 600;
 }
 
-/* line 34, ../sass/sl-components/_default.scss */
+/* line 36, ../sass/sl-components/_default.scss */
 .main-content h3, .main-content h4 {
   font-weight: 600;
 }
 
-/* line 40, ../sass/sl-components/_default.scss */
+/* line 42, ../sass/sl-components/_default.scss */
 .field-name-field-untertitel h3 {
   margin-bottom: 0;
 }
 
-/* line 48, ../sass/sl-components/_default.scss */
+/* line 50, ../sass/sl-components/_default.scss */
 .page-node-42 .field-name-field-untertitel h3 {
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
 
-/* line 55, ../sass/sl-components/_default.scss */
+/* line 57, ../sass/sl-components/_default.scss */
 h3.label-above {
   text-transform: uppercase;
   margin-bottom: 0;
 }
 
 /* two column layout */
-/* line 64, ../sass/sl-components/_default.scss */
+/* line 66, ../sass/sl-components/_default.scss */
 .group-left.field-group-div {
   float: left;
   width: 68%;
@@ -3356,38 +3361,44 @@ h3.label-above {
   clear: both;
 }
 @media (max-width: 767px) {
-  /* line 64, ../sass/sl-components/_default.scss */
+  /* line 66, ../sass/sl-components/_default.scss */
   .group-left.field-group-div {
     width: 100%;
   }
 }
 
-/* line 76, ../sass/sl-components/_default.scss */
+/* line 78, ../sass/sl-components/_default.scss */
 .group-right.field-group-div {
   float: right;
-  width: 30%;
-  margin-left: 2%;
+  width: 25%;
+  margin-left: 7%;
 }
 @media (max-width: 767px) {
-  /* line 76, ../sass/sl-components/_default.scss */
+  /* line 78, ../sass/sl-components/_default.scss */
   .group-right.field-group-div {
     width: 100%;
   }
 }
-/* line 87, ../sass/sl-components/_default.scss */
+/* line 89, ../sass/sl-components/_default.scss */
 .group-right.field-group-div img {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
 
-/* line 94, ../sass/sl-components/_default.scss */
+/* line 96, ../sass/sl-components/_default.scss */
+.group-right .field-name-field-zitat-einbinden {
+  margin-bottom: 80px;
+  margin-bottom: 5rem;
+}
+
+/* line 103, ../sass/sl-components/_default.scss */
 .webform-client-form {
   margin-bottom: 20px;
   margin-bottom: 1.5rem;
 }
 
-/* line 101, ../sass/sl-components/_default.scss */
+/* line 110, ../sass/sl-components/_default.scss */
 .compact-form label,
 input,
 textarea {
@@ -3395,12 +3406,12 @@ textarea {
   font-weight: 300;
 }
 
-/* line 111, ../sass/sl-components/_default.scss */
+/* line 120, ../sass/sl-components/_default.scss */
 .webform-component--seminar label {
   color: white;
 }
 
-/* line 119, ../sass/sl-components/_default.scss */
+/* line 128, ../sass/sl-components/_default.scss */
 .webform-submit {
   color: #fff;
   background-color: #e2001a;
@@ -4153,6 +4164,12 @@ ul.nice-menu li.menuparent ul li.active-trail a {
 /* line 35, ../sass/sl-components/_secondary-menu.scss */
 #block-menu-menu-secondary-menu ul.menu li a:hover, #block-menu-menu-secondary-menu ul.menu li a.active-trail {
   color: #e2001a !important;
+}
+
+/* line 3, ../sass/sl-components/_team.scss */
+.section-team .group-left .field-name-field-image img {
+  width: 112px;
+  height: 150px;
 }
 
 /* CSS code for zitate

@@ -23,6 +23,8 @@ body
 }
 
 .main-content {
+    margin-top: 28px;
+    margin-top: 1.75rem;
 h1, h2 {
     text-transform: uppercase;
     @include hyphens();
@@ -77,8 +79,8 @@ h3.label-above {
 {
     float: right;
 
-    width: 30%;
-    margin-left: 2%;
+    width: 25%;
+    margin-left: 7%;
 
     @include breakpoint($iphone5-6)
     {
@@ -87,6 +89,13 @@ h3.label-above {
     img {
         @include border-radius(4px);
     }
+}
+
+// Move webform down
+
+.group-right .field-name-field-zitat-einbinden {
+    margin-bottom: 80px;
+    margin-bottom: 5rem;
 }
 
 // Form stylings
