@@ -9,25 +9,35 @@
 {
     ul.menu
     {
-        border-top: 1px solid black;
         height: 3rem;
         padding-top: 10px;
         padding-right: 10px;
         padding-left: 10px;
+
         background-color: white;
-        @include breakpoint($desktop){
-                padding-left: 48px;
-                padding-left: 3rem;
-        }        
-        li {
-            a {
+
+        @include breakpoint($desktop)
+        {
+            border-top: 1px solid black;
+            padding-left: 48px;
+            padding-left: 3rem;
+        }
+        li
+        {
+            a
+            {
+                @include breakpoint($range0-480) {
+                    font-size: 14px;
+                }
                 text-decoration: none;
+
                 @include link-colors($normal: black, $hover: $red);
                 &:hover,
-                &.active-trail {
+                &.active-trail
+                {
                     // text-decoration: underline;
                     color: $red !important;
-                } 
+                }
             }
         }
     }

@@ -1354,23 +1354,22 @@ th {
 }
 
 /* Navigation bar */
-@media all and (min-width: 480px) {
-  /* line 70, ../sass/layouts/_responsive.scss */
-  .main {
-    /* Move all the children of .main down to make room. */
-    padding-top: 3em;
-    position: relative;
-  }
-
-  /* line 75, ../sass/layouts/_responsive.scss */
-  .main-navigation {
-    /* Move the navbar up inside .main's padding. */
-    position: absolute;
-    top: 0;
-    height: 3em;
-    width: 100%;
-  }
+/* line 70, ../sass/layouts/_responsive.scss */
+.main {
+  /* Move all the children of .main down to make room. */
+  padding-top: 3em;
+  position: relative;
 }
+
+/* line 75, ../sass/layouts/_responsive.scss */
+.main-navigation {
+  /* Move the navbar up inside .main's padding. */
+  position: absolute;
+  top: 0;
+  height: 3em;
+  width: 100%;
+}
+
 /**
  * Use 3 grid columns for smaller screens.
  */
@@ -3228,14 +3227,14 @@ li a,
 }
 
 /* line 39, ../sass/library/_placeholders.scss */
-.center-wrapper.two .node {
+.seminar, .center-wrapper.two .node {
   padding-bottom: 16px;
   padding-bottom: 1rem;
   border-bottom: 1px solid #777777;
 }
 
 /* line 45, ../sass/library/_placeholders.scss */
-.center-wrapper.two .node {
+.seminar, .center-wrapper.two .node {
   margin-bottom: 32px;
   margin-bottom: 2rem;
 }
@@ -3318,24 +3317,29 @@ body {
 }
 
 /* line 34, ../sass/sl-components/_default.scss */
+.main-content h3, .main-content h4 {
+  font-weight: 600;
+}
+
+/* line 40, ../sass/sl-components/_default.scss */
 .field-name-field-untertitel h3 {
   margin-bottom: 0;
 }
 
-/* line 42, ../sass/sl-components/_default.scss */
+/* line 48, ../sass/sl-components/_default.scss */
 .page-node-42 .field-name-field-untertitel h3 {
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
 
-/* line 49, ../sass/sl-components/_default.scss */
+/* line 55, ../sass/sl-components/_default.scss */
 h3.label-above {
   text-transform: uppercase;
   margin-bottom: 0;
 }
 
 /* two column layout */
-/* line 58, ../sass/sl-components/_default.scss */
+/* line 64, ../sass/sl-components/_default.scss */
 .group-left.field-group-div {
   float: left;
   width: 68%;
@@ -3352,39 +3356,51 @@ h3.label-above {
   clear: both;
 }
 @media (max-width: 767px) {
-  /* line 58, ../sass/sl-components/_default.scss */
+  /* line 64, ../sass/sl-components/_default.scss */
   .group-left.field-group-div {
     width: 100%;
   }
 }
 
-/* line 70, ../sass/sl-components/_default.scss */
+/* line 76, ../sass/sl-components/_default.scss */
 .group-right.field-group-div {
   float: right;
   width: 30%;
   margin-left: 2%;
 }
 @media (max-width: 767px) {
-  /* line 70, ../sass/sl-components/_default.scss */
+  /* line 76, ../sass/sl-components/_default.scss */
   .group-right.field-group-div {
     width: 100%;
   }
 }
-/* line 81, ../sass/sl-components/_default.scss */
+/* line 87, ../sass/sl-components/_default.scss */
 .group-right.field-group-div img {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
 
-/* line 88, ../sass/sl-components/_default.scss */
+/* line 94, ../sass/sl-components/_default.scss */
+.webform-client-form {
+  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
+}
+
+/* line 101, ../sass/sl-components/_default.scss */
 .compact-form label,
-input {
+input,
+textarea {
   color: black;
   font-weight: 300;
 }
 
-/* line 97, ../sass/sl-components/_default.scss */
+/* line 111, ../sass/sl-components/_default.scss */
+.webform-component--seminar label {
+  color: white;
+}
+
+/* line 119, ../sass/sl-components/_default.scss */
 .webform-submit {
   color: #fff;
   background-color: #e2001a;
@@ -3937,9 +3953,10 @@ ul.nice-menu li.menuparent ul li.active-trail a {
   }
 
   /* line 15, ../sass/sl-components/_main-menu-mobile.scss */
-  .region-navigation {
-    margin: 16px 0;
-    margin: 1rem 0;
+  .region-header {
+    padding-top: 12px;
+    margin: -6px 0;
+    margin: -0.375rem 0;
   }
 }
 /* CSS code for panel page one col two rows
@@ -4096,7 +4113,6 @@ ul.nice-menu li.menuparent ul li.active-trail a {
 
 /* line 10, ../sass/sl-components/_secondary-menu.scss */
 #block-menu-menu-secondary-menu ul.menu {
-  border-top: 1px solid black;
   height: 3rem;
   padding-top: 10px;
   padding-right: 10px;
@@ -4106,14 +4122,21 @@ ul.nice-menu li.menuparent ul li.active-trail a {
 @media (min-width: 769px) {
   /* line 10, ../sass/sl-components/_secondary-menu.scss */
   #block-menu-menu-secondary-menu ul.menu {
+    border-top: 1px solid black;
     padding-left: 48px;
     padding-left: 3rem;
   }
 }
-/* line 23, ../sass/sl-components/_secondary-menu.scss */
+/* line 27, ../sass/sl-components/_secondary-menu.scss */
 #block-menu-menu-secondary-menu ul.menu li a {
   text-decoration: none;
   color: black;
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  /* line 27, ../sass/sl-components/_secondary-menu.scss */
+  #block-menu-menu-secondary-menu ul.menu li a {
+    font-size: 14px;
+  }
 }
 /* line 13, ../sass/library/_link.scss */
 #block-menu-menu-secondary-menu ul.menu li a:hover {
@@ -4127,7 +4150,7 @@ ul.nice-menu li.menuparent ul li.active-trail a {
 #block-menu-menu-secondary-menu ul.menu li a:active {
   color: black;
 }
-/* line 26, ../sass/sl-components/_secondary-menu.scss */
+/* line 35, ../sass/sl-components/_secondary-menu.scss */
 #block-menu-menu-secondary-menu ul.menu li a:hover, #block-menu-menu-secondary-menu ul.menu li a.active-trail {
   color: #e2001a !important;
 }
