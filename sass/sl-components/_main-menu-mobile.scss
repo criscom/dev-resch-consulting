@@ -18,3 +18,11 @@
         margin: -0.375rem 0;
     }
 }
+
+.responsive-menus.responsified {
+    span.toggler,
+    .responsive-menus-simple {
+        background: $page-bg;
+        box-shadow: 2px 2px 2px #474a4e;
+    }
+}
