@@ -3494,7 +3494,7 @@ li a:hover,
 li a:visited,
 .link a:visited,
 .field-slideshow-caption-text a:visited {
-  color: #ff1631;
+  color: white;
 }
 /* line 15, ../sass/library/_link.scss */
 .inline-link:active, div.download-file a:active, div p a:active,
