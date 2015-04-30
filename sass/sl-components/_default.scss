@@ -30,6 +30,10 @@ h1, h2 {
     @include hyphens();
     font-weight: 600;
     }
+h2 {
+    font-size: 19px;
+    font-size: 1.16rem;
+}
 }
 
 .main-content {
@@ -89,6 +93,12 @@ h3.label-above {
     img {
         @include border-radius(4px);
     }
+}
+
+// Google map
+
+iframe {
+    max-width: 100%;
 }
 
 // Move webform down

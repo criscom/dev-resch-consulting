@@ -24,6 +24,19 @@
         }
         li
         {
+            padding-right: 15px;
+            // padding-right: 1rem;
+            @include breakpoint($phone) {
+                padding-right: 38px;
+                padding-right: 2.375rem;
+            }
+            @include breakpoint($desktop) {
+                padding-right: 20px;
+                padding-right: 1.25rem;
+            }
+            &.last {
+                padding-right: 0;
+                }
             a
             {
                 @include breakpoint($range0-480) {
@@ -37,6 +50,9 @@
                 {
                     // text-decoration: underline;
                     color: $red !important;
+                }
+                &.active-trail {
+                    @extend %bold-font-weight;
                 }
             }
         }
